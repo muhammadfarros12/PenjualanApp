@@ -133,7 +133,7 @@
 
     </ScrollView>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -142,8 +142,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/button_corner_white"
+        android:backgroundTint="@color/white"
         android:text="Masuk"
-        android:textColor="@color/white" />
+        android:textColor="@color/design_default_color_secondary_variant" />
 
 </RelativeLayout>
