@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="&#8942;"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:textStyle="bold" />
+
+        <com.rishabhharit.roundedimageview.RoundedImageView
+            android:id="@+id/img_rounded"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:src="@drawable/img_no_image"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/txt_namaToko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/txt_option"
+            android:layout_toEndOf="@+id/img_rounded"
+            android:text="Nama Toko"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_option"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/img_rounded"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Lokasi"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

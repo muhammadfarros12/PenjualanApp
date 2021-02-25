@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relCategory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/img_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_no_image"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/txt_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_image"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="Kategori" />
+
+</RelativeLayout>

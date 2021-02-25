@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crvAgent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/design_default_color_primary"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.rishabhharit.roundedimageview.RoundedImageView
+            android:id="@+id/img_rounded"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_no_image"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/txt_name_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_rounded"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="Nama Toko" />
+
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name_store"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/img_rounded"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:drawableLeftCompat="@drawable/ic_location"
+            tools:text="Lokasi"
+            app:drawableTint="@color/white" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

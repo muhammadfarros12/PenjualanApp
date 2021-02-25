@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="Bakso Mana Lagi" />
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/img_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_no_image"
+        app:cornerRadius="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Rp 20.000" />
+
+    <TextView
+        android:id="@+id/txt_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:textSize="12sp"
+        tools:text="Stok (10)" />
+
+</LinearLayout>

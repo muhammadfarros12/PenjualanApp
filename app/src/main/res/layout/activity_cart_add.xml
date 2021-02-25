@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.cart.add.CartAddActivity">
+
+    <EditText
+        android:id="@+id/edtProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="Pilih Produk" />
+
+    <TextView
+        android:id="@+id/txvQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtProduct"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="Mau berapa banyak?"
+        android:textColor="@color/black" />
+
+    <NumberPicker
+        android:id="@+id/npQuantity"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtProduct"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/txvQty" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/npQuantity"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_corner_color"
+        android:text="Tambahkan"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
